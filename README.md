@@ -19,6 +19,63 @@ AC3: The output should be a string represents the multiplication table. Suppose 
 ## Acceptance Criteria
 
 * Please draw task diagrams.
+
+  ![](D:\GoogleDownload\功能结构图.png)
+
 * Please define all the methods according to your task diagram.
+
 * Please write down a test case using *given...when...then* pattern for a leaf block. Then implement the block to pass the test.
-* Please continue doing this work until all the requirement has been fulfilled.,
+
+  ```
+  //isStartNumberSmallerThanEndNumber
+  case1:
+  	given:2,4
+  	when:call function isStartNumberSmallerThanEndNumber
+  	then:return true
+  case2:
+  	given:4,2
+  	when:call function isStartNumberSmallerThanEndNumber
+  	then:return false
+  case3:
+  	given:2,2
+  	when:call function isStartNumberSmallerThanEndNumber
+  	then: return true   
+  //isInRangeOf1to1000
+  case1:
+  	given:2,500
+  	when:call function isInRangeOf1to1000
+  	then:return true
+  case2:
+  	given:-1,500
+  	when:call function isInRangeOf1to1000
+  	then:return false
+  case3:
+  	given:500,1500
+  	when:call function isInRangeOf1to1000
+  	then:return false
+  case4:
+  	given:-500,1500
+  	when:call function isInRangeOf1to1000
+  	then:return false
+  //buildMultiplicationTable
+  case1:
+  	given:2,4
+  	when:call function buildMultiplicationTable
+  	then:return 
+  	2*2=4
+  	2*3=6 3*3=9
+  	2*4=8 3*4=12 4*4=16
+  //createEquatation
+  case1:
+  	given:2,4
+  	when:call function createEquatation
+  	then:return 2*4=8
+  	
+  ```
+
+  
+
+* Please continue doing this work until all the requirement has been fulfilled.
+
+  
+
