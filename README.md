@@ -1,4 +1,4 @@
-# Implement A Multiplication Table
+﻿# Implement A Multiplication Table
 
 Please read the following requirement:
 
@@ -70,7 +70,18 @@ AC3: The output should be a string represents the multiplication table. Suppose 
   	given:2,4
   	when:call function createEquatation
   	then:return 2*4=8
-  	
+  //createMultiplicationTable
+  case1:
+  	given:2,4
+  	when:call function createMultiplicationTable
+  	then:return 
+  	2*2=4
+  	2*3=6 3*3=9
+  	2*4=8 3*4=12 4*4=16
+  case2:
+  	given:5,4
+  	when:call function createMultiplicationTable
+  	then:return null	
   ```
 
   
