@@ -1,8 +1,8 @@
 function createMultiplicationTable(startNumber,endNumber){
     if(isStartNumberSmallerThanEndNumber(startNumber,endNumber)&&isInRangeOf1to1000(startNumber,endNumber)){
-        buildMultiplicationTable(startNumber,endNumber)
+        return buildMultiplicationTable(startNumber,endNumber)
     }else {
-        return
+        return null
     }
 }
 
@@ -42,6 +42,7 @@ module.exports = {
     buildMultiplicationTable,
     isInRangeOf1to1000,
     isStartNumberSmallerThanEndNumber,
-    createEqualitation
+    createEqualitation,
+    createMultiplicationTable
 }
 
